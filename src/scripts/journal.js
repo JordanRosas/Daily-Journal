@@ -1,14 +1,3 @@
-const journalEntries = [
-    {
-        date: "11/20/2018",
-        concept: "Array methods",
-        entry: "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
-        mood: "Ok"
-    }
-]
-
-/*Creates individual entry components */
-
 function createAndAppend(concept, entry, mood, date){
     let container = document.querySelector('#container');
     let postedJournalEntry = document.createElement('section');
@@ -31,6 +20,15 @@ function createAndAppend(concept, entry, mood, date){
     postedJournalEntry.appendChild(journalDate);
     journalDate.innerHTML = (date);
 }
+
+const journalEntries = [
+    {
+        date: "11/20/2018",
+        concept: "Array methods",
+        entry: "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
+        mood: "Ok"
+    }
+]
 
 let entryButton = document.querySelector('#submitEntry')
 
