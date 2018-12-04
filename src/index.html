@@ -17,17 +17,17 @@
 
         <fieldset>
             <label for="concept">Concept Covered</label>
-            <textarea name = "concept" row = "1" cols = "25"></textarea>
+            <textarea id = "concept" name = "entryConcept" row = "1" cols = "25"></textarea>
         </fieldset>
 
         <fieldset>
             <label for="journalEntry">Journal Entry</label>
-            <textarea name = "journalEntry" rows = "4" cols = "25"></textarea>
+            <textarea id = "journalContent" name = "journalEntry" rows = "4" cols = "25"></textarea>
         </fieldset>
 
         <fieldset>
             <label for="mood">Mood For The Day</label>
-            <select name = "mood">
+            <select id = "moodOfDay" name = "mood">
                 <option value="1">Sad</option>
                 <option value="2">Anger</option>
                 <option value="3">Surprise</option>
@@ -36,6 +36,12 @@
             </select>
         </fieldset>
     </form>
-    <button type = "button">Submit Journal Entry</button> 
+    <button id = "submitEntry" type = "button">Submit Journal Entry</button> 
+
+    <article id = "container">
+
+    </article>
+
+    <script src = "scripts/journal.js" ></script>
 </body>
 </html>
