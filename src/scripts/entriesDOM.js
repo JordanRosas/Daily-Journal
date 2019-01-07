@@ -1,5 +1,9 @@
-function appendingToDOM(entryHTML){
-    let container = document.querySelector('#container');
-    container.appendChild(entryHTML);
+//reders entry component to the DOM
+const entriesDOM = {
+    appendingToDOM(entryHTML){
+        let container = document.querySelector('#container');
+        container.appendChild(entryHTML);
+    }
 }
+
 //this function appends the element to the DOM
