@@ -9,42 +9,19 @@
 </head>
 <body>
     <h1>Daily Joural</h1>
-    <form action = "">
-        <fieldset>
-            <label for="journalDate">Date Of Entry</label>
-            <input type = "date" name = "journalDate" id = "journalDate">
-        </fieldset>
 
-        <fieldset>
-            <label for="concept">Concept Covered</label>
-            <textarea id = "concept" name = "entryConcept" row = "1" cols = "25"></textarea>
-        </fieldset>
+    <article id = "formContainer">
 
-        <fieldset>
-            <label for="journalEntry">Journal Entry</label>
-            <textarea id = "journalContent" name = "journalEntry" rows = "4" cols = "25"></textarea>
-        </fieldset>
-
-        <fieldset>
-            <label for="mood">Mood For The Day</label>
-            <select id = "moodOfDay" name = "mood">
-                <option value="1">Sad</option>
-                <option value="2">Anger</option>
-                <option value="3">Surprise</option>
-                <option value="4">Joy</option>
-                <option value="5">Hopeful</option>
-            </select>
-        </fieldset>
-    </form>
-    <button id = "submitEntry" type = "button">Submit Journal Entry</button> 
+    </article>
 
     <article id = "container">
 
     </article>
 
-    <script src = "scripts/entriesDOM.js" ></script>
     <script src = "scripts/entryComponent.js" ></script>
+    <script src = "scripts/entriesDOM.js" ></script>
     <script src = "scripts/data.js" ></script>
-    <script src = "scripts/journal.js"></script>
+    <script src = "scripts/eventListeners.js"></script>
+    <script src = "scripts/journal.js"></script> 
 </body>
 </html>

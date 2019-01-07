@@ -1,3 +1,7 @@
+/*===================CREATING INPUT FORM===================*/
+entryComponent.appendInputForm()
+
+/*=====================OBTAINING DATA FROM ENTRIES API=======================*/
 /*
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
@@ -12,6 +16,6 @@ API.getJournalEntries().then(allEntries => {
 })
 
 
-
-
-
+/*======================EVENT LISTENER=======================*/
+let submitEntry = document.querySelector("#submitEntry")
+submitEntry.addEventListener("click", eventListeners.handleButtonClick)

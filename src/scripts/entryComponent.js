@@ -1,5 +1,39 @@
 //builds the entry HTML component
 const entryComponent = {
+    appendInputForm(){
+        let inputForm = ` <form action = "">
+        <fieldset>
+            <label for="journalDate">Date Of Entry</label>
+            <input type = "date" name = "journalDate" id = "journalDate" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <label for="concept">Concept Covered</label>
+            <textarea id = "concept" name = "entryConcept" row = "1" cols = "25" required autofocus></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <textarea id = "journalContent" name = "journalEntry" rows = "4" cols = "25" required autofocus></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="mood">Mood For The Day</label>
+            <select id = "moodOfDay" name = "mood" required autofocus>
+                <option value="Sad">Sad</option>
+                <option value="Anger">Anger</option>
+                <option value="Surprise">Surprise</option>
+                <option value="Joy">Joy</option>
+                <option value="Hopeful">Hopeful</option>
+            </select>
+        </fieldset>
+    </form>
+    <button id = "submitEntry" type = "button">Submit Journal Entry</button> `
+
+    let formContainer = document.querySelector("#formContainer")
+    formContainer.innerHTML = inputForm
+    },
+    
     createAndAppend(concept, entry, mood, date){
         let postedJournalEntry = document.createElement('section');
         /*Creating the journal entry elements*/
