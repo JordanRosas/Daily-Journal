@@ -1,9 +1,7 @@
-//reders entry component to the DOM
+//reders entry component to the DOMx
 const entriesDOM = {
     appendingToDOM(entryHTML){
         let container = document.querySelector('#container');
         container.appendChild(entryHTML);
     }
 }
-
-//this function appends the element to the DOM

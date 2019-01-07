@@ -11,13 +11,6 @@ API.getJournalEntries().then(allEntries => {
     })
 })
 
-// let entryButton = document.querySelector('#submitEntry')
-
-// entryButton.addEventListener('click', function addEntryToDom(){
-//     for(let i = 0; i < journalEntries.length; i++){
-//         createAndAppend(journalEntries[i].concept, journalEntries[i].entry, journalEntries[i].mood, journalEntries[i].date)
-//     }
-// })
 
 
 
