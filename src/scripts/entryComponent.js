@@ -2,37 +2,50 @@
 const entryComponent = {
     appendInputForm(){
         let inputForm = ` <form action = "">
-        <fieldset>
+        <fieldset id = "userEntry">
             <label for="journalDate">Date Of Entry</label>
             <input type = "date" name = "journalDate" id = "journalDate" required autofocus>
         </fieldset>
 
-        <fieldset>
+        <fieldset id = "userEntry">
             <label for="concept">Concept Covered</label>
             <textarea id = "concept" name = "entryConcept" row = "1" cols = "25" required autofocus></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset id = "userEntry">
             <label for="journalEntry">Journal Entry</label>
             <textarea id = "journalContent" name = "journalEntry" rows = "4" cols = "25" required autofocus></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset id = "userEntry">
             <label for="mood">Mood For The Day</label>
             <select id = "moodOfDay" name = "mood" required autofocus>
                 <option value="Sad">Sad</option>
                 <option value="Anger">Anger</option>
-                <option value="Surprise">Surprise</option>
-                <option value="Joy">Joy</option>
                 <option value="Hopeful">Hopeful</option>
             </select>
         </fieldset>
-    </form>
-    <button id = "submitEntry" type = "button">Submit Journal Entry</button> `
+
+    <button id = "submitEntry" type = "button">Submit Journal Entry</button> 
+
+        <fieldset>
+            <legend>Filter Journal Entries By Mood</legend>
+            <input type="radio" id="goodRadio" name="radioFilter" value="Sad">
+            <label for="good">Sad</label>
+            <input type="radio" id="notSoGoodRadio" name="radioFilter" value="Anger">
+            <label for="notSoGood">Anger</label>
+            <input type="radio" id="notGoodRadio" name="radioFilter" value="Hopeful">
+            <label for="notGood">Hopeful</label>
+        </filedset>
+    </form> 
+    `
+
 
     let formContainer = document.querySelector("#formContainer")
     formContainer.innerHTML = inputForm
     },
+
+
     
     createAndAppend(concept, entry, mood, date){
         let postedJournalEntry = document.createElement('section');
@@ -58,10 +71,6 @@ const entryComponent = {
         return postedJournalEntry
     
     }
-}
-/*Creates individual entry components */
-
-
-//This returns tht outer most element: the section with the h2 and 3 p tags appended to it.
+} 
 
 

@@ -6,6 +6,34 @@
       "concept": "Array methods",
       "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
       "mood": "Ok"
+    },
+    {
+      "date": "2019-01-08",
+      "concept": "Object Methods",
+      "entry": "Working on object methods is hard learning slowly",
+      "mood": "Hopeful",
+      "id": 2
+    },
+    {
+      "date": "2019-01-15",
+      "concept": "JQUERY",
+      "entry": "super cool a little confusing at the moment",
+      "mood": "Sad",
+      "id": 3
+    },
+    {
+      "date": "2019-01-06",
+      "concept": "REACT",
+      "entry": "fun super easy love it its RULES",
+      "mood": "Hopeful",
+      "id": 4
+    },
+    {
+      "date": "2019-01-18",
+      "concept": "String Interpolation",
+      "entry": "Super easy",
+      "mood": "Anger",
+      "id": 5
     }
   ]
 }
