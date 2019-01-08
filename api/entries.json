@@ -34,6 +34,13 @@
       "entry": "Super easy",
       "mood": "Anger",
       "id": 5
+    },
+    {
+      "date": "2019-01-17",
+      "concept": "SASS",
+      "entry": "something i have no idea about",
+      "mood": "Sad",
+      "id": 6
     }
   ]
 }

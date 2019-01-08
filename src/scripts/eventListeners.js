@@ -1,9 +1,9 @@
 const eventListeners = {
   handleButtonClick(){
-    let date = document.querySelector("#journalDate").value
-    let concept = document.querySelector("#concept").value
-    let entry = document.querySelector("#journalContent").value
-    let mood = document.querySelector("#moodOfDay").value
+    let date = $("#journalDate").val()
+    let concept = $("#concept").val()
+    let entry = $("#journalContent").val()
+    let mood = $("#moodOfDay").val()
     
     const newEntry =  {
       date:date,
@@ -19,8 +19,9 @@ const eventListeners = {
   radioButtonClick(){
 
     let mood = event.target.value.toString()
-    let container = document.querySelector("#container")
-    container.innerHTML = " "
+    // let container = document.querySelector("#container")
+    // container.innerHTML = " "
+    $("#container").html(" ")
     API.getJournalEntries().then(allEntries =>{
       const filteredEntries = allEntries.filter(moodEntry => moodEntry.mood.toString() === mood)
       filteredEntries.forEach(entry =>{
