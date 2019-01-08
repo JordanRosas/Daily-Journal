@@ -2,7 +2,8 @@ h1{
     display:flex;
     justify-content:center;
 }
-fieldset{
+#userEntry{
     display:flex;
     justify-content:flex-start;
 }
+
