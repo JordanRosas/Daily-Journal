@@ -43,6 +43,8 @@ const entryComponent = {
 
     // let formContainer = document.querySelector("#formContainer")
     // formContainer.innerHTML = inputForm
+
+    //=============================creates the form in the DOM================================//
     $("#formContainer").html(inputForm)
     },
 
@@ -56,20 +58,33 @@ const entryComponent = {
         let journalMood = document.createElement('p');
         let journalDate = document.createElement('p');
     
-        
-        postedJournalEntry.appendChild(dailyConcept);
-        dailyConcept.innerHTML = (concept);
-    
-        postedJournalEntry.appendChild(journalEntry);
-        journalEntry.innerHTML = (entry);
-    
-        postedJournalEntry.appendChild(journalMood);
-        journalMood.innerHTML = (mood);
-    
-        postedJournalEntry.appendChild(journalDate);
-        journalDate.innerHTML = (date);
-    
+        $(postedJournalEntry).append(dailyConcept)
+        $(dailyConcept).html(concept)
+
+        $(postedJournalEntry).append(journalEntry)
+        $(journalEntry).html(entry)
+
+        $(postedJournalEntry).append(journalMood)
+        $(journalMood).html(mood)
+
+        $(postedJournalEntry).append(journalDate)
+        $(journalDate).html(date)
+
         return postedJournalEntry
+        
+        // postedJournalEntry.appendChild(dailyConcept);
+        // dailyConcept.innerHTML = (concept);
+    
+        // postedJournalEntry.appendChild(journalEntry);
+        // journalEntry.innerHTML = (entry);
+    
+        // postedJournalEntry.appendChild(journalMood);
+        // journalMood.innerHTML = (mood);
+    
+        // postedJournalEntry.appendChild(journalDate);
+        // journalDate.innerHTML = (date);
+    
+
     
     }
 } 
