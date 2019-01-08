@@ -41,8 +41,9 @@ const entryComponent = {
     `
 
 
-    let formContainer = document.querySelector("#formContainer")
-    formContainer.innerHTML = inputForm
+    // let formContainer = document.querySelector("#formContainer")
+    // formContainer.innerHTML = inputForm
+    $("#formContainer").html(inputForm)
     },
 
 
